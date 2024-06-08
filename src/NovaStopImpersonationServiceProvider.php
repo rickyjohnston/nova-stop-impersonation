@@ -31,7 +31,7 @@ class NovaStopImpersonationServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->mergeConfigFrom(__DIR__.'/../config/nova-stop-impersonation.php', 'nova-stop-impersonation');
     }
 
     /**
@@ -41,6 +41,10 @@ class NovaStopImpersonationServiceProvider extends ServiceProvider
      */
     protected function bootForConsole(): void
     {
+        $this->publishes([
+            __DIR__.'/../config/nova-stop-impersonation.php' => config_path('nova-stop-impersonation.php'),
+        ], 'nova-stop-impersonation.config');
+
         $this->publishes([
             __DIR__.'/../resources/views' => base_path('resources/views/vendor/rickyjohnston'),
         ], 'nova-stop-impersonation.views');

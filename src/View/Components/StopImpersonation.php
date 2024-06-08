@@ -14,7 +14,8 @@ class StopImpersonation extends Component
      */
     public function shouldRender(): bool
     {
-        return app(ImpersonatesUsers::class)->impersonating(request());
+        return app(ImpersonatesUsers::class)->impersonating(request())
+            && in_array(app()->environment(), config('nova-stop-impersonation.environments'));
     }
 
     /**
