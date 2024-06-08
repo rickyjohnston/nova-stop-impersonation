@@ -1,0 +1,45 @@
+{
+    "name": "rickyjohnston/nova-stop-impersonation",
+    "description": "Stop Nova impersonation from your front-end",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ricky Johnston",
+            "email": "rickyjohnston3@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/rickyjohnston/nova-stop-impersonation",
+    "keywords": ["Laravel", "NovaStopImpersonation"],
+    "require": {
+        "illuminate/support": "^8.83.4|^9.3.1|^10.0|^11.0"
+    },
+    "require-dev": {
+        "laravel/nova": "^4.0"
+    },
+    "repositories": {
+        "nova": {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "RickyJohnston\\NovaStopImpersonation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RickyJohnston\\NovaStopImpersonation\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RickyJohnston\\NovaStopImpersonation\\NovaStopImpersonationServiceProvider"
+            ],
+            "aliases": {
+                "NovaStopImpersonation": "RickyJohnston\\NovaStopImpersonation\\Facades\\NovaStopImpersonation"
+            }
+        }
+    }
+}
