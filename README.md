@@ -5,6 +5,8 @@ We can make this easier!
 
 This package contains a Blade component that can be added to any Laravel application to add a quick way to switch back to your User from your application frontend - no need to sign out _or_ return to Nova.
 
+![Package in](/demo/nova-stop-impersonation.mp4)
+
 ## Installation
 
 Install using Composer:
