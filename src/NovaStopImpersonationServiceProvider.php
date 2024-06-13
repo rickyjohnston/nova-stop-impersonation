@@ -15,7 +15,7 @@ class NovaStopImpersonationServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'rickyjohnston');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'rickyj');
 
         Blade::component('stop-impersonation', StopImpersonation::class);
 
@@ -46,7 +46,7 @@ class NovaStopImpersonationServiceProvider extends ServiceProvider
         ], 'nova-stop-impersonation.config');
 
         $this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/rickyjohnston'),
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/rickyj'),
         ], 'nova-stop-impersonation.views');
     }
 }
