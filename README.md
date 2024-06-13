@@ -23,6 +23,22 @@ This package registers a Blade component that can be added to your application's
 <x-stop-impersonation />
 ```
 
+## Customization
+
+Package configuration and views can be published via `php artisan vendor:publish`.
+
+### Environments
+
+The environments in which this component appears can be altered via the package configuration. Simply update the `environments` array with your desired environment targets:
+
+```diff
+    'environments' => [
+        'local',
++        'staging',
++        'production',
+    ]
+```
+
 ## Credits
 
 * [Ricky Johnston](https://www.github.com/rickyjohnston)
