@@ -1,6 +1,6 @@
 <?php
 
-namespace RickyJohnston\NovaStopImpersonation\View\Components;
+namespace RickyJ\NovaStopImpersonation\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
@@ -23,6 +23,6 @@ class StopImpersonation extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('rickyjohnston::stop-impersonation');
+        return view('rickyj::stop-impersonation');
     }
 }

@@ -24,21 +24,21 @@
     },
     "autoload": {
         "psr-4": {
-            "RickyJohnston\\NovaStopImpersonation\\": "src/"
+            "RickyJ\\NovaStopImpersonation\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RickyJohnston\\NovaStopImpersonation\\Tests\\": "tests"
+            "RickyJ\\NovaStopImpersonation\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "RickyJohnston\\NovaStopImpersonation\\NovaStopImpersonationServiceProvider"
+                "RickyJ\\NovaStopImpersonation\\NovaStopImpersonationServiceProvider"
             ],
             "aliases": {
-                "NovaStopImpersonation": "RickyJohnston\\NovaStopImpersonation\\Facades\\NovaStopImpersonation"
+                "NovaStopImpersonation": "RickyJ\\NovaStopImpersonation\\Facades\\NovaStopImpersonation"
             }
         }
     }

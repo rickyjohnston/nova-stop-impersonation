@@ -1,10 +1,10 @@
 <?php
 
-namespace RickyJohnston\NovaStopImpersonation;
+namespace RickyJ\NovaStopImpersonation;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use RickyJohnston\NovaStopImpersonation\View\Components\StopImpersonation;
+use RickyJ\NovaStopImpersonation\View\Components\StopImpersonation;
 
 class NovaStopImpersonationServiceProvider extends ServiceProvider
 {
