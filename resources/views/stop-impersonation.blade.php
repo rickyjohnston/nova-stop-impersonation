@@ -10,7 +10,7 @@
         transition: all 0.2s;
         cursor: pointer;
         overflow: hidden;
-        max-width: 275px;
+        max-width: 300px;
         width: 100%;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
