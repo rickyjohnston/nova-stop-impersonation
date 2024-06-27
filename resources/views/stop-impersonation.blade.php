@@ -1,3 +1,6 @@
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=nunito-sans:700" rel="stylesheet" />
+
 <style>
     #stop-impersonation {
         position: fixed;
@@ -51,6 +54,10 @@
         }
 
         .stop-impersonating {
+            font-family: "Nunito Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
             display: block;
             width: 100%;
             text-align: left;
